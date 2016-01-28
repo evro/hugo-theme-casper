@@ -520,6 +520,10 @@ body.nav-opened .site-wrapper {
     width: 80%;
 }
 
+.main-header-content a {
+    text-decoration: none;
+}
+
 .main-nav {
     position: relative;
     padding: 35px 40px;
@@ -882,7 +886,7 @@ body.nav-opened .menu-button .word {
     font-weight: 400;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255,255,255,0.9);
 }
 
 .no-cover.main-header {
@@ -950,9 +954,9 @@ body.nav-opened .menu-button .word {
     box-shadow: #FFF 0 0 0 5px;
 }
 
-body:not(.post-template) .post-title {
+/*body:not(.post-template) .post-title {
     font-size: 3.6rem;
-}
+}*/
 
 .post-title a {
     text-decoration: none;
