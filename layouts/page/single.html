@@ -43,10 +43,6 @@
 
 
 <main class="content" role="main">
-
-
-
-
   <article class="post {{ .Section }}">
     <header class="post-header">
       <nav class="breadcrumb">
@@ -148,13 +144,6 @@
 
 
   <footer class="post-footer">
-
-
-    {{if .Site.Params.logo}}
-    <figure class="author-image">
-        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
-    </figure>
-    {{end}}
 
     {{ partial "author.html" . }}
 

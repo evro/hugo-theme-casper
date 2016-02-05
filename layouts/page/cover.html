@@ -43,13 +43,8 @@
 
 
 <main class="content" role="main">
-
-
-
-
   <article class="post {{ .Section }}">
     <header class="post-header">
-
         <section class="post-meta">
         {{ if eq .Section "post"}}
           <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
@@ -63,11 +58,7 @@
     </header>
 
     <section class="post-content">
-
-
 {{ .Content }}
-
-
 
 <nav class="navpage">
 
@@ -106,13 +97,6 @@
 
 
   <footer class="post-footer">
-
-
-    {{if .Site.Params.logo}}
-    <figure class="author-image">
-        <a class="img" href="{{.Site.BaseURL}}" style="background-image: url({{ $baseurl }}{{.Site.Params.logo}})"><span class="hidden">{{.Site.Params.author}}'s Picture</span></a>
-    </figure>
-    {{end}}
 
     {{ partial "author.html" . }}
 
